@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search</title>
+  <style>
+
+    body {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    input {
+      outline: none;
+    }
+
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    input[type='search'] {
+      -webkit-appearance: textfield;
+      box-sizing: border-box;
+      background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+      border: solid 1px #ccc;
+      padding: 9px 10px 9px 32px;
+      width: 88px;
+
+      border-radius: 10em;
+      transition: all .5s;
+    }
+
+    input[type='search']:focus {
+      width: 130px;
+      background-color: #fff;
+      border-color: #66cc75;
+      box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    }
+
+    input::placeholder {
+      color: #999;
+    }
+
+    #form2 input[type='search'] {
+      width: 15px;
+      padding-left: 24px;
+      color: transparent;
+      cursor: pointer;
+    }
+
+    #form2 input[type='search']:hover {
+      background-color: #fff;
+    }
+
+    #form2 input[type='search']:focus {
+      width: 130px;
+      background-color: #fff;
+      border-color: #66cc75;
+      padding-left: 32px;
+      box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+      cursor: auto;
+      color: #000;
+    }
+
+    #form2 input::placeholder {
+      color: transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Expandable Search</h1>
+  <h3>Search 1</h3>
+  <form id='form1'>
+    <input type="search" placeholder="search">
+  </form>
+
+  <h3>Search 2</h3>
+  <form id="form2">
+    <input type="search" placeholder="search">
+  </form>
+</body>
+</html>
